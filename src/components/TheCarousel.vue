@@ -3,13 +3,19 @@
         <swiper
             :slidesPerView="3"
             :spaceBetween="30"
+            :centeredSlides="true"
+            :autoplay="{
+                delay: 2500,
+                disableOnInteraction: false,
+            }"
             :pagination="{
-      clickable: true,
-    }"
+                clickable: true,
+             }"
+            :navigation="true"
             :modules="modules"
             class="mySwiper"
         >
-            <swiper-slide v-for="img in 20">
+            <swiper-slide class="w-auto h-[90%]" v-for="img in 20">
                 <img src="../assets/images/carousel.png" alt="">
             </swiper-slide>
         </swiper>
@@ -18,14 +24,11 @@
 
 <script>
 import {Swiper, SwiperSlide} from "swiper/vue";
+import {Autoplay, Navigation, Pagination} from "swiper";
 import "swiper/css";
-
 import "swiper/css/grid";
 import "swiper/css/pagination";
-
 import "../swiper.css";
-// import required modules
-import {Grid, Pagination} from "swiper";
 
 export default {
     name: "TheCarousel",
@@ -35,17 +38,18 @@ export default {
     },
     data() {
         return {
-            modules: [Grid, Pagination],
+            modules: [Autoplay, Pagination, Navigation],
         }
     }
 }
 </script>
 
 <style>
-.swiper-pagination {
-    transform: translate(0,40px)!important;
+.swiper-button-prev {
+    color: red!important;
 }
-.swiper-pagination > span{
-    background-color: black!important;
+
+.swiper-button-next {
+    color: red!important;
 }
 </style>
