@@ -1,0 +1,126 @@
+<template>
+    <div class="flex justify-between container pt-16 pb-20 mx-auto">
+        <div class="w-40 space-y-7">
+            <div class="w-24 flex flex-shrink-0">
+                <router-link to="/" class="hover:scale-105 duration-500">
+                    <img class="w-full" src="./icons/SiteLogo.svg" alt="Logo">
+                </router-link>
+            </div>
+            <p class="text-gray-400">Интернет-магазин Крафтовые ручные поделки</p>
+        </div>
+        <div class="space-y-5">
+            <h1 class="font-medium">О нас</h1>
+            <ul class="space-y-5">
+                <li class="font-medium">
+                    <a href="#" class="link-style">Оплата и доставка</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-style">Услуги</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-style">Гарантия и возврат</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-style">Гарантия и возврат</a>
+                </li>
+            </ul>
+        </div>
+        <div class="space-y-5">
+            <h1 class="font-medium">Отзывы</h1>
+            <ul class="space-y-5">
+                <li class="font-medium">
+                    <a href="#" class="link-style">Новинки</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-style">Новости</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-style">Контакты</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-style">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="space-y-5">
+            <h1 class="font-medium">Отзывы</h1>
+            <ul class="space-y-5">
+                <li class="font-medium">
+                    <a href="#" class="link-style">Новинки</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-style">Новости</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-style">Контакты</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-style">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="space-y-5">
+            <h1 class="font-medium">Cпособы оплаты</h1>
+
+            <ul class="flex space-x-5">
+                <li class="font-medium">
+                    <a href="#" class="hover:text-primary">
+                        <img class="mb-3" src="./icons/brand-logos/paymeLogo.svg" alt="">
+                    </a>
+                    <a href="#" class="hover:text-primary">
+                        <img src="./icons/brand-logos/masterCardLogo.svg" alt="">
+                    </a>
+                </li>
+                <li class="font-medium space-y-3">
+                    <a href="#" class="hover:text-primary">
+                        <img class="mb-3" src="./icons/brand-logos/clickLogo.svg" alt="">
+                    </a>
+                    <a href="#" class="hover:text-primary">
+                        <img src="./icons/brand-logos/uzcardLogo.svg" alt="">
+                    </a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="hover:text-primary">
+                        <img class="mb-3" src="./icons/brand-logos/visaLogo.svg" alt="">
+                    </a>
+                    <a href="#" class="hover:text-primary">
+                        <img src="./icons/brand-logos/apelsinLogo.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="space-y-5">
+            <h1 class="font-medium">Социальные сети</h1>
+
+            <ul class="flex space-x-5">
+                <li class="font-medium">
+                    <a href="#" class="hover:text-primary">
+                        <img class="mb-3" src="./icons/brand-logos/facebookLogo.svg" alt="">
+                    </a>
+                </li>
+                <li class="font-medium space-y-3">
+                    <a href="#" class="hover:text-primary">
+                        <img class="mb-3" src="./icons/brand-logos/instagramLogo.svg" alt="">
+                    </a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="hover:text-primary">
+                        <img class="mb-3" src="./icons/brand-logos/telegramLogo.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</template>
+
+<script>
+export default {
+    name: "TheFooter"
+}
+</script>
+
+<style scoped>
+
+</style>
