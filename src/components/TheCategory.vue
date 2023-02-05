@@ -1,54 +1,63 @@
 <template>
-    <div class="flex justify-between container mx-auto items-center py-6">
-        <div class="flex space-x-3 items-center">
-            <Bars3Icon class="w-6 h-6 text-[#553280] cursor-pointer hover:text-[#FFD600] duration-500"/>
-            <h1 class="text-[#553280] font-medium">Все категории</h1>
-        </div>
-        <div>
-            <ul class="flex space-x-6 items-center">
-                <li v-for="link of links">
-                    <router-link
-                        :to="link.link"
-                        class="block font-medium hover:text-primary hover:scale-105 duration-500">
-                        {{ link.title }}
-                    </router-link>
-                </li>
-            </ul>
-        </div>
-        <div class="flex space-x-2">
-            <div class="relative">
-                <h1 class="absolute text-center right-4 bottom-3 text-[10px] bg-primary rounded-full w-4">1</h1>
-                <HeartIcon class="w-6 h-6 text-gray-400"/>
-            </div>
-            <h1 class="text-gray-400">Избранное</h1>
-        </div>
+    <div class="flex relative space-x-3 items-center">
+        <Bars3Icon
+            class="w-6 h-6 text-[#553280] cursor-pointer hover:text-[#FFD600] duration-500"
+            v-if="openDropdown"
+            @click="showDropdown"
+        />
+        <XMarkIcon
+            class="w-6 h-6 text-[#553280] cursor-pointer hover:text-[#FFD600] duration-500"
+            v-else
+            @click="showDropdown"
+        />
+        <router-link to="/categories" class="text-[#553280] link-hover">Все категории</router-link>
+
+        <!--  Categories list start -->
+        <ul
+            class="absolute top-10 -left-3 z-10 w-64 opacity-95 space-y-4 p-5 bg-gray-200 block"
+            v-if="!openDropdown"
+        >
+            <li v-for="category of categories">
+                <router-link :to="category.link" class="text-sm link-hover">{{ category.title }}</router-link>
+            </li>
+            <li class="flex space-x-3 items-center">
+                <a href="#" class="text-sm hover:text-primary duration-500">Ещё</a>
+                <ChevronDownIcon  class="w-3 h-3 cursor-pointer hover:text-primary duration-500"/>
+            </li>
+        </ul>
+        <!--  Categories list end -->
+
     </div>
 </template>
 
 <script>
-import {Bars3Icon, HeartIcon} from '@heroicons/vue/24/outline'
+import {Bars3Icon, XMarkIcon, ChevronDownIcon} from '@heroicons/vue/24/outline'
 
 export default {
     name: "TheCategory",
     components: {
         Bars3Icon,
-        HeartIcon
+        XMarkIcon,
+        ChevronDownIcon
     },
     data() {
         return {
-            links: [
-                {link: '#', title: 'О нас'},
-                {link: '#', title: 'Оплата и доставка'},
-                {link: '#', title: 'Услуги'},
-                {link: '#', title: 'Отзывы'},
-                {link: '#', title: 'Новинки'},
-                {link: '#', title: 'Вакансии'}
-            ]
+            categories: [
+                {title: 'Подарки', link: '/categories'},
+                {title: 'Аксессуары', link: '/categories'},
+                {title: 'Одежда и обувь', link: '/categories'},
+                {title: 'Товары для дома', link: '/categories'}
+            ],
+            openDropdown: true
+        }
+    },
+    methods: {
+        showDropdown() {
+            this.openDropdown = !this.openDropdown
         }
     }
 }
 </script>
 
 <style scoped>
-
 </style>

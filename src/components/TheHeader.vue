@@ -4,41 +4,23 @@
         <div class="header__top flex justify-between container mx-auto items-center py-3">
             <ul class="flex space-x-14">
                 <li>
-                    <router-link to="#"
-                                 class="block text-sm text-gray-400 hover:text-primary hover:scale-105 duration-500">
-                        Контакты
-                    </router-link>
+                    <router-link to="#" class="link-hover text-sm">Контакты</router-link>
                 </li>
                 <li>
-                    <router-link to="#"
-                                 class="block text-sm text-gray-400 hover:text-primary hover:scale-105 duration-500">
-                        Помощь
-                    </router-link>
+                    <router-link to="#" class="link-hover text-sm">Помощь</router-link>
                 </li>
                 <li>
-                    <router-link to="#"
-                                 class="block text-sm text-gray-400 hover:text-primary hover:scale-105 duration-500">
-                        Услуги и сервис
-                    </router-link>
+                    <router-link to="#" class="link-hover text-sm">Услуги и сервис</router-link>
                 </li>
                 <li>
-                    <router-link to="#"
-                                 class="block text-sm text-gray-400 hover:text-primary hover:scale-105 duration-500">
-                        Стать партнером
-                    </router-link>
+                    <router-link to="#" class="link-hover text-sm">Стать партнером</router-link>
                 </li>
             </ul>
             <div class="flex space-x-2 items-center">
                 <span><img src="icons/iconLogin.svg" alt=""></span>
-                <router-link to="/logout"
-                             class="block text-sm text-gray-400 hover:text-primary hover:scale-105 duration-500">
-                    Вход
-                </router-link>
+                <router-link to="/logout" class="link-hover text-sm">Вход</router-link>
                 <div class="text-gray-400 text-sm">|</div>
-                <router-link to="/registration"
-                             class="block text-sm text-gray-400 hover:text-primary hover:scale-105 duration-500">
-                    Регистация
-                </router-link>
+                <router-link to="/registration" class="link-hover text-sm">Регистация</router-link>
             </div>
         </div>
 
@@ -49,7 +31,7 @@
 
                 <div class="flex items-center space-x-24">
                     <div class="w-24 flex flex-shrink-0">
-                        <router-link to="/" class="link-style">
+                        <router-link to="/" class="hover:scale-105 duration-500">
                             <img class="w-full" src="./icons/SiteLogo.svg" alt="Logo">
                         </router-link>
                     </div>
@@ -73,7 +55,7 @@
                         <div>
                             <router-link
                                 to="#"
-                                class="link-style"
+                                class="link-hover"
                             >
                                 Работаем по всему <br> Узбекистану
                             </router-link>
@@ -82,8 +64,11 @@
                     <li class="flex flex-shrink-0 space-x-3 items-center">
                         <div class="p-3 bg-amber-100 rounded-full"><img src="./icons/phone.svg" alt=""></div>
                         <div>
-                            <a href="tel:+998900000000" class="link-style">
-                                +998 90 000 00 00 <br> Заказать звонок
+                            <a href="tel:+998900000000" class="link-hover">
+                                +998 90 000 00 00
+                            </a><br>
+                            <a href="tel:+998900000000" class="link-hover">
+                                Заказать звонок
                             </a>
                         </div>
                     </li>
@@ -91,7 +76,7 @@
                         <div class="p-3 bg-amber-100 rounded-full"><img src="./icons/basket.svg" alt=""></div>
                         <div class="relative">
                             <router-link to="#">
-                                <span class="link-style">Корзина</span>
+                                <span class="block link-hover mb-0.5">Корзина</span>
                                 <span class="absolute text-center left-6 text-[10px] bg-primary rounded-full w-4">
                                     1
                                 </span>

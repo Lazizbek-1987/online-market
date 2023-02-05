@@ -1,21 +1,19 @@
 <template>
-    <div>
+    <div class="h-24">
         <swiper
             :slidesPerView="6"
-            :spaceBetween="120"
+            :loop="true"
+            :spaceBetween="20"
             :centeredSlides="true"
-            :pagination="false"
-            :modules="modules"
-            :navigation="true"
-            class="mySwiper"
             :autoplay="{
                 delay: 2500,
                 disableOnInteraction: false,
             }"
+            :modules="modules"
+            class="mySwiper"
         >
-            <swiper-slide class="w-50 bg-[#F5F7FA]" v-for="img in 20">
-                <img class="border-4 border-gray-300 rounded px-7 py-9" src="./icons/brand-logos/huaweiLogo.svg" alt="">
-                <img class="border-4 border-gray-300 rounded px-7 py-9" src="./icons/brand-logos/samsungLogo.svg" alt="">
+            <swiper-slide class="w-auto h-[90%]" v-for="img in 6">
+                <img src="../assets/images/carousel.png" alt="">
             </swiper-slide>
         </swiper>
     </div>
@@ -23,7 +21,7 @@
 
 <script>
 import {Swiper, SwiperSlide} from 'swiper/vue';
-import {Autoplay, Navigation, Pagination} from 'swiper';
+import {Autoplay, Navigation} from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
@@ -37,7 +35,7 @@ export default {
     },
     data() {
         return {
-            modules: [Autoplay, Pagination, Navigation],
+            modules: [Autoplay, Navigation],
         }
     }
 }

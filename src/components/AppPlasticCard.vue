@@ -1,5 +1,5 @@
 <template>
-    <ul>
+    <ul class="hover:scale-105 duration-500 shadow-sm hover:shadow-sm hover:-translate-y-3 hover:shadow-primary">
         <li class="items-center text-center bg-white space-y-4 p-7">
             <img class="mx-auto pb-3" src="./icons/plasticCard.svg" alt="">
             <h1 class="font-medium">Моментальная ОПЛАТА <br> БЕЗ РЕГИСТРАЦИИ и комисии</h1>

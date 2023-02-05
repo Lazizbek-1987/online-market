@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-    .link-style {
-        @apply block hover:text-primary hover:scale-105 duration-500
-    }
+    /*.link-style {*/
+    /*    @apply block hover:text-primary hover:scale-105 duration-500*/
+    /*}*/
 }

@@ -12,33 +12,16 @@
             <h1 class="font-medium">О нас</h1>
             <ul class="space-y-5">
                 <li class="font-medium">
-                    <a href="#" class="link-style">Оплата и доставка</a>
+                    <a href="#" class="link-hover">Оплата и доставка</a>
                 </li>
                 <li class="font-medium">
-                    <a href="#" class="link-style">Услуги</a>
+                    <a href="#" class="link-hover">Услуги</a>
                 </li>
                 <li class="font-medium">
-                    <a href="#" class="link-style">Гарантия и возврат</a>
+                    <a href="#" class="link-hover">Гарантия и возврат</a>
                 </li>
                 <li class="font-medium">
-                    <a href="#" class="link-style">Гарантия и возврат</a>
-                </li>
-            </ul>
-        </div>
-        <div class="space-y-5">
-            <h1 class="font-medium">Отзывы</h1>
-            <ul class="space-y-5">
-                <li class="font-medium">
-                    <a href="#" class="link-style">Новинки</a>
-                </li>
-                <li class="font-medium">
-                    <a href="#" class="link-style">Новости</a>
-                </li>
-                <li class="font-medium">
-                    <a href="#" class="link-style">Контакты</a>
-                </li>
-                <li class="font-medium">
-                    <a href="#" class="link-style">Контакты</a>
+                    <a href="#" class="link-hover">Гарантия и возврат</a>
                 </li>
             </ul>
         </div>
@@ -46,16 +29,33 @@
             <h1 class="font-medium">Отзывы</h1>
             <ul class="space-y-5">
                 <li class="font-medium">
-                    <a href="#" class="link-style">Новинки</a>
+                    <a href="#" class="link-hover">Новинки</a>
                 </li>
                 <li class="font-medium">
-                    <a href="#" class="link-style">Новости</a>
+                    <a href="#" class="link-hover">Новости</a>
                 </li>
                 <li class="font-medium">
-                    <a href="#" class="link-style">Контакты</a>
+                    <a href="#" class="link-hover">Контакты</a>
                 </li>
                 <li class="font-medium">
-                    <a href="#" class="link-style">Контакты</a>
+                    <a href="#" class="link-hover">Контакты</a>
+                </li>
+            </ul>
+        </div>
+        <div class="space-y-5">
+            <h1 class="font-medium">Отзывы</h1>
+            <ul class="space-y-5">
+                <li class="font-medium">
+                    <a href="#" class="link-hover">Новинки</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-hover">Новости</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-hover">Контакты</a>
+                </li>
+                <li class="font-medium">
+                    <a href="#" class="link-hover">Контакты</a>
                 </li>
             </ul>
         </div>
@@ -122,5 +122,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>

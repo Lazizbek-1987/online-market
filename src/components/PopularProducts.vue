@@ -3,8 +3,8 @@
         <div class="text-lg -ml-20 mb-12 items-center font-bold">
             <h1><span class="text-white bg-primary pl-40 py-1">Популярные</span> товары</h1>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 container gap-7 mx-auto">
-                <the-card v-for="card in 12" class="space-y-4"/>
+        <div class="flex flex-wrap justify-center container gap-7 mx-auto">
+                <the-card v-for="card in 12"/>
         </div>
     </div>
 </template>
