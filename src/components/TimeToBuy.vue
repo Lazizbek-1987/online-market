@@ -3,12 +3,18 @@
         <div class="flex justify-center text-lg mb-11 items-center font-bold">
             <h1>Успейте <span class="text-white bg-primary pr-40 py-1">купить</span></h1>
         </div>
-        <div class="block md:flex justify-center gap-7 container mx-auto">
+        <div class="block md:flex justify-center container mx-auto gap-3 container mx-auto">
             <div class="w-1/3">
                 <the-big-card/>
             </div>
-            <div class="w-2/3 grid lg:grid-cols-2 xl:grid-cols-4 gap-4">
-                <the-card v-for="card in 8"/>
+            <div class="w-2/3 grid lg:grid-cols-2 xl:grid-cols-3 gap-4">
+                <app-card
+                    v-for="(product, index) in toBuyProducts"
+                    :key="index"
+                    :type="product.type"
+                    :title="product.title"
+                    :price="product.price"
+                />
             </div>
         </div>
     </div>
@@ -16,11 +22,25 @@
 
 <script>
 import TheBigCard from "./TheBigCard.vue";
-import TheCard from "./AppCard.vue";
+import AppCard from "./AppCard.vue";
 
 export default {
     name: "TimeToBuy",
-    components: {TheCard, TheBigCard}
+    components: {AppCard, TheBigCard},
+    data() {
+        return {
+            toBuyProducts: [
+                {id: 1, type: 'Texnika', title: 'Kolonka', price: 175000},
+                {id: 2, type: 'Kompyuter', title: 'Notebook', price: 1000000},
+                {id: 3, type: 'Kiyim-kechak', title: 'Kuylak', price: 175000},
+                {id: 4, type: 'Aksessuar', title: 'Bluetooth', price: 50000},
+                {id: 5, type: 'Texnika', title: 'Xolodolnik', price: 7500000},
+                {id: 6, type: 'Texnika', title: 'Konditsioner', price: 4500000},
+                // {id: 7, type: 'Texnika', title: 'Kolonka', price: 150000},
+                // {id: 8, type: 'Texnika', title: 'Kolonka', price: 200000},
+            ]
+        }
+    }
 }
 </script>
 

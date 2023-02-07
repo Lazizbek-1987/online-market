@@ -65,26 +65,26 @@
             <ul class="flex space-x-5">
                 <li class="font-medium">
                     <a href="#" class="hover:text-primary">
-                        <img class="mb-3" src="./icons/brand-logos/paymeLogo.svg" alt="">
+                        <img class="mb-3" src="./icons/paymeLogo.svg" alt="">
                     </a>
                     <a href="#" class="hover:text-primary">
-                        <img src="./icons/brand-logos/masterCardLogo.svg" alt="">
+                        <img src="./icons/masterCardLogo.svg" alt="">
                     </a>
                 </li>
                 <li class="font-medium space-y-3">
                     <a href="#" class="hover:text-primary">
-                        <img class="mb-3" src="./icons/brand-logos/clickLogo.svg" alt="">
+                        <img class="mb-3" src="./icons/clickLogo.svg" alt="">
                     </a>
                     <a href="#" class="hover:text-primary">
-                        <img src="./icons/brand-logos/uzcardLogo.svg" alt="">
+                        <img src="./icons/uzcardLogo.svg" alt="">
                     </a>
                 </li>
                 <li class="font-medium">
                     <a href="#" class="hover:text-primary">
-                        <img class="mb-3" src="./icons/brand-logos/visaLogo.svg" alt="">
+                        <img class="mb-3" src="./icons/visaLogo.svg" alt="">
                     </a>
                     <a href="#" class="hover:text-primary">
-                        <img src="./icons/brand-logos/apelsinLogo.svg" alt="">
+                        <img src="./icons/apelsinLogo.svg" alt="">
                     </a>
                 </li>
             </ul>
@@ -96,17 +96,17 @@
             <ul class="flex space-x-5">
                 <li class="font-medium">
                     <a href="#" class="hover:text-primary">
-                        <img class="mb-3" src="./icons/brand-logos/facebookLogo.svg" alt="">
+                        <img class="mb-3" src="./icons/facebookLogo.svg" alt="">
                     </a>
                 </li>
                 <li class="font-medium space-y-3">
                     <a href="#" class="hover:text-primary">
-                        <img class="mb-3" src="./icons/brand-logos/instagramLogo.svg" alt="">
+                        <img class="mb-3" src="./icons/instagramLogo.svg" alt="">
                     </a>
                 </li>
                 <li class="font-medium">
                     <a href="#" class="hover:text-primary">
-                        <img class="mb-3" src="./icons/brand-logos/telegramLogo.svg" alt="">
+                        <img class="mb-3" src="./icons/telegramLogo.svg" alt="">
                     </a>
                 </li>
             </ul>

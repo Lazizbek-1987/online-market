@@ -3,21 +3,12 @@
         <!--   Header top  -->
         <div class="header__top flex justify-between container mx-auto items-center py-3">
             <ul class="flex space-x-14">
-                <li>
-                    <router-link to="#" class="link-hover text-sm">Контакты</router-link>
-                </li>
-                <li>
-                    <router-link to="#" class="link-hover text-sm">Помощь</router-link>
-                </li>
-                <li>
-                    <router-link to="#" class="link-hover text-sm">Услуги и сервис</router-link>
-                </li>
-                <li>
-                    <router-link to="#" class="link-hover text-sm">Стать партнером</router-link>
+                <li v-for="(link, index) in headerLinks" :key="index">
+                    <router-link :to="link.link" class="link-hover text-sm">{{ link.title }}</router-link>
                 </li>
             </ul>
             <div class="flex space-x-2 items-center">
-                <span><img src="icons/iconLogin.svg" alt=""></span>
+                <span><img src="./icons/iconLogin.svg" alt=""></span>
                 <router-link to="/logout" class="link-hover text-sm">Вход</router-link>
                 <div class="text-gray-400 text-sm">|</div>
                 <router-link to="/registration" class="link-hover text-sm">Регистация</router-link>
@@ -51,7 +42,9 @@
 
                 <ul class="flex justify-between items-center space-x-20">
                     <li class="flex flex-shrink-0 space-x-3 items-center">
-                        <div class="p-3.5 bg-amber-100 rounded-full"><img src="./icons/location.svg" alt=""></div>
+                        <div class="p-3.5 bg-amber-100 rounded-full">
+                            <img src="./icons/location.svg" alt="">
+                        </div>
                         <div>
                             <router-link
                                 to="#"
@@ -93,10 +86,21 @@
 
 <script>
 import {MagnifyingGlassIcon} from '@heroicons/vue/24/outline'
+import Icon from "./Icon.vue";
 
 export default {
     name: "TheHeader",
-    components: {MagnifyingGlassIcon}
+    components: {MagnifyingGlassIcon, Icon},
+    data() {
+        return {
+            headerLinks: [
+                {title: 'Контакты', link: '#'},
+                {title: 'Помощь', link: '#'},
+                {title: 'Услуги и сервис', link: '#'},
+                {title: 'Стать партнером', link: '#'},
+            ]
+        }
+    }
 }
 </script>
 
