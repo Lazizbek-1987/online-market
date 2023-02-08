@@ -1,22 +1,24 @@
 <template>
-    <header class="header">
+    <header class="header shadow-sm">
         <!--   Header top  -->
-        <div class="header__top flex justify-between container mx-auto items-center py-3">
-            <ul class="flex space-x-14">
-                <li v-for="(link, index) in headerLinks" :key="index">
-                    <router-link :to="link.link" class="link-hover text-sm">{{ link.title }}</router-link>
-                </li>
-            </ul>
-            <div class="flex space-x-2 items-center">
-                <span><img src="./icons/iconLogin.svg" alt=""></span>
-                <router-link to="/logout" class="link-hover text-sm">Вход</router-link>
-                <div class="text-gray-400 text-sm">|</div>
-                <router-link to="/registration" class="link-hover text-sm">Регистация</router-link>
+        <div class="shadow-sm">
+            <div class="header__top flex justify-between container mx-auto items-center py-3">
+                <ul class="flex space-x-14">
+                    <li v-for="(link, index) in headerLinks" :key="index">
+                        <router-link :to="link.link" class="link-hover text-sm">{{ link.title }}</router-link>
+                    </li>
+                </ul>
+                <div class="flex space-x-2 items-center">
+                    <span><img src="./icons/iconLogin.svg" alt=""></span>
+                    <router-link to="/logout" class="link-hover text-sm">Вход</router-link>
+                    <div class="text-gray-400 text-sm">|</div>
+                    <router-link to="/registration" class="link-hover text-sm">Регистация</router-link>
+                </div>
             </div>
         </div>
 
+
         <nav>
-            <hr>
             <!--  Herader  -->
             <div class="flex justify-between container mx-auto py-6 items-center">
 

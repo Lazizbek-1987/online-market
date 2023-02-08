@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full min-h-screen bg-[#FDFEFF] overflow-hidden font-[Montserrat]">
+    <div class="w-full min-h-screen bg-[#FBFBFB] overflow-hidden font-[Montserrat]">
         <the-header />
         <the-navbar />
 

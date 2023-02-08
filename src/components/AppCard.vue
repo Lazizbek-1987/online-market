@@ -1,6 +1,7 @@
 <template>
-    <div
-        class="parent w-72 relative overflow-hidden space-y-1 text-center bg-gray-50
+    <router-link
+        to="/product-card"
+        class="parent w-64 relative overflow-hidden space-y-1 text-center bg-gray-50
         hover:scale-105 lg:hover:scale-125 hover:bg-white duration-500"
     >
         <div class="w-full h-44 overflow-hidden">
@@ -20,7 +21,7 @@
                 <span @click="addToCard" class="text-white text-[14px]">В корзину</span>
             </button>
         </div>
-    </div>
+    </router-link>
 </template>
 
 <script>
@@ -45,11 +46,13 @@ export default {
     left: 0;
     right: 0;
     bottom: -56px;
+    margin-top: 50px;
+    transition: .7s;
 }
 
 .parent:hover .animation-btn {
-    bottom: -12px;
-    transition: .5s;
+    bottom: 0;
     z-index: 100;
+    padding-top: 50px;
 }
 </style>

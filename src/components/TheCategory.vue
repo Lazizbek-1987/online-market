@@ -24,14 +24,16 @@
                             {{ category.title }}
                         </router-link>
                     </li>
-                    <li class="flex space-x-3 px-6 py-2 link-hover items-center">
+                    <li class="flex space-x-3 px-6 py-2 items-center">
                         <a
                             href="#"
-                            class="block py-2 text-gray-800 hover:bg-primary hover:text-white duration-500"
+                            class="block py-2 text-gray-800"
                         >
                             Ещё
                         </a>
-                        <ChevronDownIcon class="w-6 h-6 cursor-pointer text-gray-400 hover:text-primary duration-500"/>
+                        <ChevronDownIcon
+                            class="w-6 h-6 cursor-pointer text-gray-400 hover:text-primary hover:scale-125 duration-500"
+                        />
                     </li>
                 </ul>
             </transition>

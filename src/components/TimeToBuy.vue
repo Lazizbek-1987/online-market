@@ -3,11 +3,11 @@
         <div class="flex justify-center text-lg mb-11 items-center font-bold">
             <h1>Успейте <span class="text-white bg-primary pr-40 py-1">купить</span></h1>
         </div>
-        <div class="block md:flex justify-center container mx-auto gap-3 container mx-auto">
-            <div class="w-1/3">
+        <div class="block lg:flex justify-center w-full container gap-8 mx-auto">
+            <div class="w-full">
                 <the-big-card/>
             </div>
-            <div class="w-2/3 grid lg:grid-cols-2 xl:grid-cols-3 gap-4">
+            <div class="flex flex-wrap justify-center container gap-8 mx-auto">
                 <app-card
                     v-for="(product, index) in toBuyProducts"
                     :key="index"

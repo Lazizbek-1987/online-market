@@ -65,26 +65,26 @@
             <ul class="flex space-x-5">
                 <li class="font-medium">
                     <a href="#" class="hover:text-primary">
-                        <img class="mb-3" src="./icons/paymeLogo.svg" alt="">
+                        <img class="mb-3" src="./icons/payme-gray-logo.svg" alt="">
                     </a>
                     <a href="#" class="hover:text-primary">
-                        <img src="./icons/masterCardLogo.svg" alt="">
+                        <img src="./icons/master-gray-logo.svg" alt="">
                     </a>
                 </li>
                 <li class="font-medium space-y-3">
                     <a href="#" class="hover:text-primary">
-                        <img class="mb-3" src="./icons/clickLogo.svg" alt="">
+                        <img class="mb-3" src="./icons/click-gray-logo.svg" alt="">
                     </a>
                     <a href="#" class="hover:text-primary">
-                        <img src="./icons/uzcardLogo.svg" alt="">
+                        <img src="./icons/uzcard-gray-logo.svg" alt="">
                     </a>
                 </li>
                 <li class="font-medium">
                     <a href="#" class="hover:text-primary">
-                        <img class="mb-3" src="./icons/visaLogo.svg" alt="">
+                        <img class="mb-3" src="./icons/visa-gray-logo.svg" alt="">
                     </a>
                     <a href="#" class="hover:text-primary">
-                        <img src="./icons/apelsinLogo.svg" alt="">
+                        <img src="./icons/apelsin-logo.svg" alt="">
                     </a>
                 </li>
             </ul>

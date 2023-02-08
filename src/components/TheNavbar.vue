@@ -1,8 +1,11 @@
 <template>
-    <div class="flex justify-between container mx-auto items-center py-6">
-        <the-category/>
-        <navbar-footer/>
+    <div class="shadow-sm mb-6">
+        <div class="flex justify-between container mx-auto items-center py-6">
+            <the-category/>
+            <navbar-footer/>
+        </div>
     </div>
+
 </template>
 
 <script>
