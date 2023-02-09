@@ -9,7 +9,8 @@
                     <div class="flex justify-between w-[400px]">
                         <img
                             v-for="img in 4"
-                            class="w-16 opacity-75 cursor-pointer hover:opacity-100 border-2 hover:border-primary duration-500"
+                            class="w-16 opacity-75 cursor-pointer hover:opacity-100 border-2 hover:border-primary
+                            hover:scale-125 duration-500"
                             src="../assets/images/cardProduct.png"
                             alt=""
                         >
@@ -21,8 +22,9 @@
                         <div class="flex space-x-3 items-center">
                             <span class="text-lg text-gray-600">Состояние товара: </span>
                             <span class="text-lg text-gray-800">Новый</span>
-                            <span class="p-1 bg-gray-500 rounded-full cursor-pointer hover:scale-110 duration-500">
-                                <XMarkIcon class="w-5 h-5 text-white"/>
+                            <span class="p-1 bg-gray-500 rounded-full cursor-pointer hover:border-gray-400 duration-500
+                                  hover:bg-gray-400">
+                                <XMarkIcon class="w-5 h-5 text-white hover:text-primary"/>
                             </span>
                         </div>
                         <div class="flex gap-3">
@@ -61,8 +63,6 @@
             </div>
         </div>
     </div>
-
-    <new-products />
 </template>
 
 <script>
@@ -72,12 +72,10 @@ import AppReviews from "./AppReviews.vue";
 import AppStar from "./AppStar.vue";
 import AppAccordion from "./AppAccordion.vue";
 import AppProductCourierCard from "./AppProductCourierCard.vue";
-import NewProducts from "./NewProducts.vue";
 
 export default {
     name: "CardProduct",
     components: {
-        NewProducts,
         AppProductCourierCard,
         AppAccordion,
         AppStar,

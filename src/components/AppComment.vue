@@ -40,12 +40,12 @@
                 </div>
                 <div class="flex space-x-8 items-center">
                     <div class="flex space-x-2 items-center">
-                        <HandThumbUpIcon class="w-5 h-5 cursor-pointer hover:scale-110 duration-500 hover:text-primary
+                        <HandThumbUpIcon class="w-5 h-5 cursor-pointer duration-500 hover:text-primary
                     hover:fill-primary fill-gray-400 text-gray-400"/>
                         <span>4</span>
                     </div>
                     <div class="flex space-x-2 items-center">
-                        <HandThumbDownIcon class="w-5 h-5 cursor-pointer hover:scale-110 duration-500 hover:text-primary
+                        <HandThumbDownIcon class="w-5 h-5 cursor-pointer duration-500 hover:text-primary
                     hover:fill-primary fill-gray-400 text-gray-400"/>
                         <span>0</span>
                     </div>

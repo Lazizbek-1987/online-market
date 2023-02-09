@@ -71,7 +71,7 @@
                         <div class="p-3 bg-amber-100 rounded-full"><img src="./icons/basket.svg" alt=""></div>
                         <div class="relative">
                             <router-link to="#">
-                                <span class="block link-hover mb-0.5">Корзина</span>
+                                <router-link to="/basket-products" class="block link-hover mb-0.5">Корзина</router-link>
                                 <span class="absolute text-center left-6 text-[10px] bg-primary rounded-full w-4">
                                     1
                                 </span>
