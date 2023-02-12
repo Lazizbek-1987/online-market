@@ -12,7 +12,7 @@
                 v-else
                 @click="isOpen = !isOpen"
             />
-            <router-link to="/categories" class="text-[#553280] link-hover">Все категории</router-link>
+            <router-link to="/category" class="text-[#553280] link-hover">Все категории</router-link>
 
             <transition name="dropdown">
                 <ul v-if="isOpen" class="absolute -left-2 top-6 z-10 w-64 bg-gray-200 mt-2 py-2 rounded shadow-xl">

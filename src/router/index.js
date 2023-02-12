@@ -18,6 +18,21 @@ const router = createRouter({
       path: '/basket-products',
       name: 'basket-products',
       component: () => import('../views/BasketProductsPage.vue')
+    },
+    {
+      path: '/category',
+      name: 'category',
+      component: () => import('../views/CategoryPage.vue')
+    },
+    {
+      path: '/favorites',
+      name: 'favorites',
+      component: () => import('../views/FavoritesPage.vue')
+    },
+    {
+      path: '/about-us',
+      name: 'about-us',
+      component: () => import('../views/AboutUsPage.vue')
     }
   ]
 })

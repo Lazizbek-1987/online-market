@@ -13,7 +13,7 @@
             <h1 class="absolute text-center right-4 bottom-3 text-[10px] bg-primary rounded-full w-4">1</h1>
             <HeartIcon class="w-6 h-6 text-gray-400 cursor-pointer hover:text-red-500 duration-500"/>
         </div>
-        <router-link to="#" class="link-hover">Избранное</router-link>
+        <router-link to="/favorites" class="link-hover">Избранное</router-link>
     </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
     data() {
         return {
             links: [
-                {link: '#', title: 'О нас'},
+                {link: '/about-us', title: 'О нас'},
                 {link: '#', title: 'Оплата и доставка'},
                 {link: '#', title: 'Услуги'},
                 {link: '#', title: 'Отзывы'},

@@ -1,10 +1,10 @@
 <template>
 
-    <div class="flex justify-between container mx-auto bg-blue-500">
+    <div class="flex justify-between container mx-auto space-x-3">
 
-        <div class="w-2/3 h-96 bg-primary">
+        <div class="w-2/3">
             <h1 class="block font-bold text-3xl pb-6">Всего 4 товара</h1>
-            <div class="bg-green-300">
+            <div v-for="basket in 4" class="">
                 <app-basket-card/>
             </div>
         </div>
